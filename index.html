@@ -1,9 +1,27 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>For My Princess</title>
-<meta name="claude:viewport-fit-sides" content="cover">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>📩 Special delivery for Ujunwa</title>
+<meta name="description" content="Open when you have 2 minutes. No peeking.">
+<meta name="theme-color" content="#FFE6EE">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z' fill='%23FF4D7D'/%3E%3C/svg%3E">
+
+<!-- link preview (WhatsApp, iMessage, Instagram, etc.) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tsunamiisking.github.io/fictional-train/">
+<meta property="og:title" content="📩 Special delivery for Ujunwa">
+<meta property="og:description" content="Open when you have 2 minutes. No peeking.">
+<meta property="og:image" content="https://tsunamiisking.github.io/fictional-train/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim&family=Sniglet:wght@400;800&display=swap">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
 <style>
 /* Layout: one full-height stage, three stacked scenes (letter → question → yes) over a strawberry-milk dot sheet with peel-off stickers */
 :root{
@@ -136,7 +154,7 @@ h1 em{font-style:normal;color:var(--berry-deep);text-decoration:underline wavy v
 .yay{font-size:clamp(2.2rem,10vw,3.2rem);color:var(--berry-deep)}
 .sweet{margin:0;font-size:1.15rem;line-height:1.4;max-width:32ch}
 .cert{
-  width:100%;background:var(--paper);border:3px solid var(--ink);border-radius:16px;box-shadow:0 6px 0 var(--ink);
+  width:100%;box-sizing:border-box;background:var(--paper);border:3px solid var(--ink);border-radius:16px;box-shadow:0 6px 0 var(--ink);
   padding:18px 18px 16px;text-align:left;transform:rotate(-1deg);
   background-image:repeating-linear-gradient(transparent 0 29px, rgba(255,77,125,.14) 29px 30px);
 }
@@ -153,6 +171,27 @@ h1 em{font-style:normal;color:var(--berry-deep);text-decoration:underline wavy v
 .mint{background:var(--mint)}
 .copied{margin:0;font-size:.95rem;opacity:.8;-webkit-user-select:text;user-select:text}
 
+/* ---------- the note ---------- */
+.note{
+  width:100%;box-sizing:border-box;background:var(--paper);border:3px solid var(--ink);border-radius:16px;box-shadow:0 6px 0 var(--ink);
+  padding:20px 20px 18px;text-align:left;transform:rotate(1deg);
+  background-image:repeating-linear-gradient(transparent 0 31px, rgba(255,77,125,.14) 31px 32px);
+  -webkit-user-select:text;user-select:text;
+}
+.note p{margin:0 0 14px;font-size:1.1rem;line-height:32px}
+.note p:last-of-type{margin-bottom:6px}
+.note .hi{font-family:var(--display);font-weight:800;font-size:1.25rem}
+.note .sig{display:block;text-align:right;font-family:var(--display);font-weight:800;font-size:1.3rem;transform:rotate(-4deg);color:var(--berry-deep)}
+
+/* ---------- processing ---------- */
+.bar{width:min(300px,100%);height:28px;background:var(--paper);border:3px solid var(--ink);border-radius:999px;box-shadow:0 4px 0 var(--ink);overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:repeating-linear-gradient(-45deg,var(--berry) 0 12px,var(--blush) 12px 24px);border-right:3px solid var(--ink);transition:width .7s cubic-bezier(.4,0,.2,1)}
+.steps{list-style:none;margin:6px 0 0;padding:0;display:flex;flex-direction:column;gap:8px;font-size:1.15rem;min-height:7.5em}
+.steps li{opacity:0;transform:translateY(6px);transition:opacity .3s ease, transform .3s ease}
+.steps li.now{opacity:1;transform:none}
+.steps li.done::after{content:" ✓";color:#2E9E6E;font-family:var(--display);font-weight:800}
+.steps li:last-child{font-family:var(--display);font-weight:800;font-size:1.4rem;color:var(--berry-deep)}
+
 /* ---------- stickers & confetti ---------- */
 .stickers{position:fixed;inset:0;z-index:2;pointer-events:none}
 .sticker{position:absolute;pointer-events:auto;cursor:pointer;background:none;border:0;padding:0;animation:float 4s ease-in-out infinite;transition:transform .3s ease, opacity .3s ease}
@@ -165,6 +204,8 @@ h1 em{font-style:normal;color:var(--berry-deep);text-decoration:underline wavy v
   *,*::before,*::after{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important}
 }
 </style>
+</head>
+<body>
 
 <div class="stickers" id="stickers"></div>
 
@@ -188,6 +229,21 @@ h1 em{font-style:normal;color:var(--berry-deep);text-decoration:underline wavy v
   </div>
 </section>
 
+<!-- 1b. what the letter says -->
+<section class="scene" id="note" aria-label="The letter">
+  <div class="wrap">
+    <p class="eyebrow">read this first</p>
+    <div class="note">
+      <p class="hi"><span data-name>Ujunwa</span>,</p>
+      <p>I know we went through a rough patch, and I'm so glad we found our way back to each other. Being without you showed me exactly how much you mean to me.</p>
+      <p>So here's my promise: I'll be loyal, I'll be honest, and I'll love you with everything I have. No games, no half-measures. Just me, all in.</p>
+      <p>Also, I still can't get over those eyes. Prettiest I've ever seen. Even when that sharp mouth of yours is roasting me 😂</p>
+      <span class="sig">— <span data-me>Allen</span></span>
+    </div>
+    <button class="btn yes" id="readyBtn" type="button">Okay, ask me 👀</button>
+  </div>
+</section>
+
 <!-- 2. the question -->
 <section class="scene" id="ask" aria-label="The question">
   <div class="wrap">
@@ -202,6 +258,19 @@ h1 em{font-style:normal;color:var(--berry-deep);text-decoration:underline wavy v
       <button class="btn no" id="noBtn" type="button">No</button>
     </div>
     <p class="tally" id="tally" hidden></p>
+  </div>
+</section>
+
+<!-- 2b. please hold -->
+<section class="scene" id="wait" aria-label="Processing your answer">
+  <div class="wrap">
+    <p class="eyebrow">please hold</p>
+    <div class="bar"><i id="barFill"></i></div>
+    <ul class="steps" id="steps" aria-live="polite">
+      <li>Updating relationship status…</li>
+      <li>Notifying <span data-me>Allen</span>'s mum…</li>
+      <li>Done!</li>
+    </ul>
   </div>
 </section>
 
@@ -221,6 +290,7 @@ h1 em{font-style:normal;color:var(--berry-deep);text-decoration:underline wavy v
       <dl>
         <dt>Date</dt><dd id="certDate"></dd>
         <dt>Times she tried "No"</dt><dd id="certNo">0</dd>
+        <dt>Loyalty</dt><dd>100%, always</dd>
         <dt>Valid until</dt><dd>Forever</dd>
         <dt>Refund policy</dt><dd>None. Sorry.</dd>
       </dl>
@@ -246,7 +316,7 @@ const CONFIG = {
   name: 'Ujunwa',       // her name
   pet: 'My Princess',   // what you call her
   me: 'Allen',          // your name
-  whatsapp: ''          // your number with country code, digits only, e.g. '2348012345678'
+  whatsapp: '2348101502547' // your number with country code, digits only
 };
 
 const $ = s => document.querySelector(s);
@@ -381,8 +451,9 @@ function openLetter(){
   env.classList.add('open');
   const r = env.getBoundingClientRect();
   burst(r.left + r.width/2, r.top + r.height*.5, 24, 6);
-  setTimeout(() => show('ask'), 1700);
+  setTimeout(() => show('note'), 1700);
 }
+$('#readyBtn').addEventListener('click', () => show('ask'));
 env.addEventListener('click', openLetter);
 env.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLetter(); } });
 
@@ -396,10 +467,10 @@ const LINES = [
   'That button is shy. Try the pink one.',
   'Wait… you\'re actually pressing No?',
   'I made a whole website for you o.',
-  'My heart is doing the shaky thing.',
+  'Is this your sharp mouth talking? 😂',
   'I\'m not crying, you\'re crying.',
   'Okay. I\'m crying.',
-  'The Yes button is RIGHT there.',
+  'Those pretty eyes can see the Yes button. I know they can.',
   'Last chance before something happens…'
 ];
 const TWIST_AT = 10;
@@ -428,7 +499,9 @@ function dodge(e){
   yesBtn.textContent = YES_LABELS[attempts];
   noBtn.style.setProperty('--s', Math.max(.55, 1 - attempts*.05).toFixed(2));
   noBtn.style.setProperty('--r', (Math.random()*16 - 8).toFixed(1) + 'deg');
-  yesBtn.style.setProperty('--s', Math.min(1 + attempts*.11, 1.9).toFixed(2));
+  // grow Yes, but never wider than the screen (offsetWidth ignores the scale transform)
+  const fit = (innerWidth - 32) / yesBtn.offsetWidth;
+  yesBtn.style.setProperty('--s', Math.min(1 + attempts*.11, 1.6, fit).toFixed(2));
 
   tally.hidden = false;
   tally.textContent = `Times you tried "No": ${attempts}. He's keeping count.`;
@@ -492,12 +565,29 @@ function answerText(){
   const tries = twisted ? attempts - 1 : attempts;
   return tries > 0 ? `I said YES 💕 (after trying No ${tries} time${tries === 1 ? '' : 's'} 🙈)` : 'I said YES 💕 First try!';
 }
+let answered = false;
 function sayYes(){
+  if (answered) return;
+  answered = true;
   const tries = twisted ? attempts - 1 : attempts;
   $('#certNo').textContent = tries === 0 ? '0 (first try!)' : tries;
   $('#certDate').textContent = new Date().toLocaleDateString('en-GB', {day:'numeric', month:'long', year:'numeric'});
   const wa = $('#waBtn');
   if (CONFIG.whatsapp){ wa.href = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(answerText())}`; wa.hidden = false; }
+
+  // fake "processing" beat before the party
+  const steps = document.querySelectorAll('#steps li'), fill = $('#barFill'), STEP = 900;
+  steps.forEach(li => li.className = '');
+  fill.style.width = '0%';
+  show('wait');
+  steps.forEach((li, i) => setTimeout(() => {
+    if (i) steps[i-1].classList.add('done');
+    li.classList.add('now');
+    fill.style.width = ((i + 1) / steps.length * 100) + '%';
+  }, 250 + i*STEP));
+  setTimeout(celebrate, 250 + steps.length*STEP + 150);
+}
+function celebrate(){
   show('yes');
   burst(innerWidth/2, innerHeight*.35, 90, 11);
   setTimeout(() => rain(120), 350);
@@ -520,7 +610,7 @@ $('#copyBtn').addEventListener('click', () => {
 
 /* ---------- replay ---------- */
 $('#replay').addEventListener('click', () => {
-  attempts = 0; twisted = false;
+  attempts = 0; twisted = false; answered = false;
   noBtn.className = 'btn no'; noBtn.style.cssText = ''; noBtn.textContent = 'No';
   yesBtn.style.cssText = ''; yesBtn.textContent = 'Yes';
   choices.appendChild(noBtn);
